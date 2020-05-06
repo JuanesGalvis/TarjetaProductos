@@ -1,0 +1,19 @@
+{
+  "name": "mentoria_degranda",
+  "version": "1.0.0",
+  "description": "Diseño de tarje de producto en la mentoría con Diego de Granda en Platzi Master (5-5-2020)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JuanesGalvis/TarjetaProductos.git"
+  },
+  "author": "Juan Galvis <juangalvis.sh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanesGalvis/TarjetaProductos/issues"
+  },
+  "homepage": "https://github.com/JuanesGalvis/TarjetaProductos#readme"
+}

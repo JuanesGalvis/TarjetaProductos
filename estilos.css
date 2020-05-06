@@ -1,0 +1,173 @@
+/* 
+    BUENAS PRÁCTICAS 
+
+    Orden
+
+    1. Position
+    2. Box Model
+    3. Tipografía
+    4. Visual
+    5. Miscelaneos (Experimental)
+
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    /* Box Model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Tipografía */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Visual */
+    background-color: #5466b1;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    background-color: #FFF;
+}
+
+.container .imgBox
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #5466b1;
+}
+
+.container .imgBox::before
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 8em;
+    font-weight: 800;
+    color: #000;
+    content: 'Nike';
+    opacity: 0.1;
+}
+
+img
+{
+    position: relative;
+    left: -50px;
+    width: 700px;
+    transform: rotate(-20deg);
+}
+
+.container .details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* RESPETAR SU CAJA SIN ESPACIOS POR FUER */
+    box-sizing: border-box;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.container .details h2
+{
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #444;
+}
+
+.container .details span
+{
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container .details p{
+    max-width: 85%;
+    margin-left: 15%;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: #333;
+}
+
+.container .details h3
+{
+    float: left;
+    font-size: 2.5em;
+    color: #2a2a2a;
+}
+
+.container .details button
+{
+    margin-top: 5px;
+    float: right;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #FFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: #5466b1;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1080)
+{
+    .container
+    {
+        height: auto;
+    }
+
+    .container .imgBox
+    {
+        padding: 40px;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .container .imgBox img
+    {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+
+    .container .details
+    {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container .details p
+    {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+}
