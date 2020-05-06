@@ -50,7 +50,7 @@ body
     align-items: center;
     width: 50%;
     height: 100%;
-    background-color: #5466b1;
+    background-color: #233067;
 }
 
 .container .imgBox::before
@@ -118,7 +118,7 @@ img
     color: #2a2a2a;
 }
 
-.container .details button
+.container .details .Comprar
 {
     margin-top: 5px;
     float: right;
@@ -128,10 +128,65 @@ img
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 40px;
-    background-color: #5466b1;
+    background-color: #233067;
     font-weight: 600;
     border: none;
     cursor: pointer;
+}
+
+.colores
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.colores #btn-yellow
+{
+    background-color: darkorange;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.colores #btn-azul
+{
+    background-color: #233067;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.colores #btn-black
+{
+    background-color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.colores #btn-red
+{
+    background-color: firebrick;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.colores #btn-white
+{
+    background-color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #444;
 }
 
 @media (max-width: 1080)
